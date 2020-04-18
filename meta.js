@@ -36,19 +36,20 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '项目名称',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
-      default: 'A Vue.js project',
+      message: '项目描述',
+      default: '神州医疗vue项目',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: 'Author',
+      message: '开发者',
+      default: 'cc',
     },
     build: {
       when: 'isNotTest',
@@ -71,39 +72,34 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: '你的项目需要安装vue-router吗?',
+    },
+    axios: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: '你的项目需要安装axios吗?',
     },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
+      message: '是否在你的项目中使用eslint作为代码检测工具?',
     },
     lintConfig: {
-      when: 'isNotTest && lint',
+      when: 'isNotTest',
       type: 'list',
-      message: 'Pick an ESLint preset',
+      message: 'eslint默认配置',
       choices: [
         {
-          name: 'Standard (https://github.com/standard/standard)',
+          name: '神州医疗自定义配置',
           value: 'standard',
           short: 'Standard',
-        },
-        {
-          name: 'Airbnb (https://github.com/airbnb/javascript)',
-          value: 'airbnb',
-          short: 'Airbnb',
-        },
-        {
-          name: 'none (configure it yourself)',
-          value: 'none',
-          short: 'none',
         },
       ],
     },
     unit: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Set up unit tests',
+      message: '是否集成单元测试',
     },
     runner: {
       when: 'isNotTest && unit',
