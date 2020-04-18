@@ -79,6 +79,23 @@ module.exports = {
       type: 'confirm',
       message: '你的项目需要安装axios吗?',
     },
+    lint: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: '是否在你的项目中使用eslint作为代码检测工具?',
+    },
+    lintConfig: {
+      when: 'isNotTest && lint',
+      type: 'list',
+      message: 'eslint默认配置',
+      choices: [
+        {
+          name: '神州医疗自定义配置',
+          value: 'standard',
+          short: 'Standard',
+        },
+      ],
+    },
     unit: {
       when: 'isNotTest',
       type: 'confirm',
