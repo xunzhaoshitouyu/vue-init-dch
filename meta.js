@@ -36,19 +36,20 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '项目名称',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
-      default: 'A Vue.js project',
+      message: '项目描述',
+      default: '神州医疗vue项目',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: 'Author',
+      message: '开发者',
+      default: 'cc',
     },
     build: {
       when: 'isNotTest',
@@ -71,7 +72,7 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: '你的项目需要安装vue-router吗?',
     },
     axios: {
       when: 'isNotTest',
@@ -81,7 +82,7 @@ module.exports = {
     unit: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Set up unit tests',
+      message: '是否集成单元测试',
     },
     runner: {
       when: 'isNotTest && unit',
