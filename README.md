@@ -4,10 +4,9 @@
 
 > This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
 
-
 # Vue-cli 3 is here, so this template is now considered deprecated.
 
-This template was the main template for vue-cli verison 2.*.
+This template was the main template for vue-cli verison 2.\*.
 
 Now that we have released a [stable version of vue-cli 3](https://cli.vuejs.org), which incorporates all features that this template offers (and much more), we think that this template doesn't have any significant use for the future, so we won't put much resource in developing it further.
 
@@ -24,9 +23,9 @@ Feel free to fork this template if you want to keep it alive.
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
 
-``` bash
+```bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init xunzhaoshitouyu/vue-init-dch my-project
 $ cd my-project
 $ npm install
 $ npm run dev
@@ -34,7 +33,7 @@ $ npm run dev
 
 This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
 
-``` bash
+```bash
 $ vue init webpack#develop my-project
 ```
 
@@ -45,6 +44,7 @@ The development server will run on port 8080 by default. If that port is already
 ## What's Included
 
 - `npm run dev`: first-in-class development experience.
+
   - Webpack + `vue-loader` for single file Vue components.
   - State preserving hot-reload
   - State preserving compilation error overlay
@@ -52,6 +52,7 @@ The development server will run on port 8080 by default. If that port is already
   - Source maps
 
 - `npm run build`: Production ready build.
+
   - JavaScript minified with [UglifyJS v3](https://github.com/mishoo/UglifyJS2/tree/harmony).
   - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
   - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
@@ -59,6 +60,7 @@ The development server will run on port 8080 by default. If that port is already
   - Use `npm run build --report`to build with bundle size analytics.
 
 - `npm run unit`: Unit tests run in [JSDOM](https://github.com/tmpvar/jsdom) with [Jest](https://facebook.github.io/jest/), or in PhantomJS with Karma + Mocha + karma-webpack.
+
   - Supports ES2015+ in test files.
   - Easy mocking.
 
@@ -72,6 +74,6 @@ The development server will run on port 8080 by default. If that port is already
 
 You can fork this repo to create your own boilerplate, and use it with `vue-cli`:
 
-``` bash
+```bash
 vue init username/repo my-project
 ```
