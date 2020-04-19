@@ -3,7 +3,8 @@
 module.exports = {
   root: true,
   parserOptions: {
-    parser: "babel-eslint"
+     parser: "babel-eslint",
+    ecmaVersion: 8
   },
   env: {
     browser: true
@@ -107,9 +108,9 @@ module.exports = {
   },
   // 添加全局变量，这样no-undef就不会报错
   globals: {
-    Service: true, // Service是全局变量
-    WsConfig: true,
-    CommonUtil: true,
-    _: true
+    Service: "readonly", // Service是全局变量
+    WsConfig: "readonly",
+    CommonUtil: "readonly",
+    _: "readonly"
   }
 };
